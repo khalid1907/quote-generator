@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid #ffffff;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 50px 40px;
+    box-shadow: 0 20px 65px rgba(93, 64, 55, 0.1);
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    background-color: #ffffff;
+    z-index: -1;
+    top: -10%;
+    left: 10%;
+    border-radius: 10px;
+}
+
+.container p {
+font-family: "Margarine", sans-serif;    color: #5d4037;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.container h3 {
+    color: #df7d5f;
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+.container button {
+    font-size: large;
+    background-color: #ff8c00;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #ff6500;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .container p {
+        font-size: 16px;
+    }
+
+    .container h3 {
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .container button {
+        padding: 8px 12px;
+        font-size: medium;
+    }
+}
